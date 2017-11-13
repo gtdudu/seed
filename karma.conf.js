@@ -2,11 +2,13 @@ const path = require('path');
 
 module.exports = function (config) {
   config.set({
-    basePath: '.',
+    basePath: './',
     frameworks: ['mocha', 'dirty-chai', 'sinon-chai'],
     files: [
       'node_modules/angular/angular.min.js',
+      'node_modules/@uirouter/angularjs/angular-ui-router.min.js',
       './client/**/*.js',
+
     ],
     preprocessors: {
       './client/**/*.js': ['babel', 'coverage'],
