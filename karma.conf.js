@@ -16,7 +16,7 @@ module.exports = function (config) {
     babelPreprocessor: {
       options: {
         presets: ['es2015'],
-        plugins: ['transform-es2015-modules-umd']
+        plugins: ['transform-es2015-modules-umd', 'babel-plugin-transform-class-properties']
       }
     },
     autoWatch: false,

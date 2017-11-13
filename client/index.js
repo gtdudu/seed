@@ -11,13 +11,5 @@ myApp.config(['$stateProvider', '$locationProvider', ($stateProvider, $locationP
     enabled: true,
   });
 
-  $stateProvider.state({
-    name: 'home',
-    url: '/',
-    template: `
-      <h3>Home Page {{ HomePage.welcome }}</h3>
-    `,
-    controller: HomePage,
-    controllerAs: 'HomePage'
-  });
+  $stateProvider.state(HomePage);
 }]);
